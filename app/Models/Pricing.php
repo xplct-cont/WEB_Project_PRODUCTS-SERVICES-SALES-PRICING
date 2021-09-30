@@ -9,12 +9,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Pricing
  * @package App\Models
- * @version September 29, 2021, 12:16 pm UTC
+ * @version September 30, 2021, 12:19 am UTC
  *
  * @property string $Product_Model
  * @property number $Product_Price
- * @property string $Customer_Name
- * @property string $Date_Bought
+ * @property string $Product_Discount
+ * @property string $Start_Of_Sale
+ * @property string $End_Of_Sale
  * @property string $Warranty_Code
  */
 class Pricing extends Model
@@ -36,8 +37,9 @@ class Pricing extends Model
     public $fillable = [
         'Product_Model',
         'Product_Price',
-        'Customer_Name',
-        'Date_Bought',
+        'Product_Discount',
+        'Start_Of_Sale',
+        'End_Of_Sale',
         'Warranty_Code'
     ];
 
@@ -50,8 +52,9 @@ class Pricing extends Model
         'id' => 'integer',
         'Product_Model' => 'string',
         'Product_Price' => 'decimal:2',
-        'Customer_Name' => 'string',
-        'Date_Bought' => 'date',
+        'Product_Discount' => 'string',
+        'Start_Of_Sale' => 'date',
+        'End_Of_Sale' => 'date',
         'Warranty_Code' => 'string'
     ];
 
@@ -63,8 +66,9 @@ class Pricing extends Model
     public static $rules = [
         'Product_Model' => 'nullable|string|max:255',
         'Product_Price' => 'required|numeric',
-        'Customer_Name' => 'required|string|max:255',
-        'Date_Bought' => 'required',
+        'Product_Discount' => 'nullable|string|max:255',
+        'Start_Of_Sale' => 'required',
+        'End_Of_Sale' => 'required',
         'Warranty_Code' => 'required|string|max:255',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'

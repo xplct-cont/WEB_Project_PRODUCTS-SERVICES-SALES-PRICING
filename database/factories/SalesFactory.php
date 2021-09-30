@@ -22,11 +22,12 @@ class SalesFactory extends Factory
     public function definition()
     {
         return [
-            'Product_Brand' => $this->faker->word,
-        'Product_Model' => $this->faker->word,
-        'Start_Of_Sale' => $this->faker->word,
-        'End_Of_Sale' => $this->faker->word,
-        'Sale_Code' => $this->faker->word,
+            'Sold_Product_Brand' => $this->faker->word,
+        'Sold_Product_Model' => $this->faker->word,
+        'Date_Sold' => $this->faker->word,
+        'Customer_Name' => $this->faker->word,
+        'Contact_Number' => $this->faker->word,
+        'Product_Warranty_Code' => $this->faker->word,
         'created_at' => $this->faker->date('Y-m-d H:i:s'),
         'updated_at' => $this->faker->date('Y-m-d H:i:s')
         ];

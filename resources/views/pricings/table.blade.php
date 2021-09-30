@@ -4,8 +4,9 @@
             <tr>
                 <th>Product Model</th>
         <th>Product Price</th>
-        <th>Customer Name</th>
-        <th>Date Bought</th>
+        <th>Product Discount</th>
+        <th>Start Of Sale</th>
+        <th>End Of Sale</th>
         <th>Warranty Code</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -15,8 +16,9 @@
             <tr>
                 <td>{{ $pricing->Product_Model }}</td>
             <td>{{ $pricing->Product_Price }}</td>
-            <td>{{ $pricing->Customer_Name }}</td>
-            <td>{{ $pricing->Date_Bought }}</td>
+            <td>{{ $pricing->Product_Discount }}</td>
+            <td>{{ $pricing->Start_Of_Sale }}</td>
+            <td>{{ $pricing->End_Of_Sale }}</td>
             <td>{{ $pricing->Warranty_Code }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['pricings.destroy', $pricing->id], 'method' => 'delete']) !!}

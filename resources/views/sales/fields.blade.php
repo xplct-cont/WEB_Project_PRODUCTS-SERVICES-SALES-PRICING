@@ -1,24 +1,24 @@
-<!-- Product Brand Field -->
+<!-- Sold Product Brand Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Product_Brand', 'Product Brand:') !!}
-    {!! Form::text('Product_Brand', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+    {!! Form::label('Sold_Product_Brand', 'Sold Product Brand:') !!}
+    {!! Form::text('Sold_Product_Brand', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
 </div>
 
-<!-- Product Model Field -->
+<!-- Sold Product Model Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Product_Model', 'Product Model:') !!}
-    {!! Form::text('Product_Model', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+    {!! Form::label('Sold_Product_Model', 'Sold Product Model:') !!}
+    {!! Form::text('Sold_Product_Model', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
 </div>
 
-<!-- Start Of Sale Field -->
+<!-- Date Sold Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Start_Of_Sale', 'Start Of Sale:') !!}
-    {!! Form::text('Start_Of_Sale', null, ['class' => 'form-control','id'=>'Start_Of_Sale']) !!}
+    {!! Form::label('Date_Sold', 'Date Sold:') !!}
+    {!! Form::text('Date_Sold', null, ['class' => 'form-control','id'=>'Date_Sold']) !!}
 </div>
 
 @push('page_scripts')
     <script type="text/javascript">
-        $('#Start_Of_Sale').datetimepicker({
+        $('#Date_Sold').datetimepicker({
             format: 'YYYY-MM-DD HH:mm:ss',
             useCurrent: true,
             sideBySide: true
@@ -26,24 +26,20 @@
     </script>
 @endpush
 
-<!-- End Of Sale Field -->
+<!-- Customer Name Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('End_Of_Sale', 'End Of Sale:') !!}
-    {!! Form::text('End_Of_Sale', null, ['class' => 'form-control','id'=>'End_Of_Sale']) !!}
+    {!! Form::label('Customer_Name', 'Customer Name:') !!}
+    {!! Form::text('Customer_Name', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
 </div>
 
-@push('page_scripts')
-    <script type="text/javascript">
-        $('#End_Of_Sale').datetimepicker({
-            format: 'YYYY-MM-DD HH:mm:ss',
-            useCurrent: true,
-            sideBySide: true
-        })
-    </script>
-@endpush
-
-<!-- Sale Code Field -->
+<!-- Contact Number Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Sale_Code', 'Sale Code:') !!}
-    {!! Form::text('Sale_Code', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+    {!! Form::label('Contact_Number', 'Contact Number:') !!}
+    {!! Form::text('Contact_Number', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+</div>
+
+<!-- Product Warranty Code Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('Product_Warranty_Code', 'Product Warranty Code:') !!}
+    {!! Form::text('Product_Warranty_Code', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
 </div>

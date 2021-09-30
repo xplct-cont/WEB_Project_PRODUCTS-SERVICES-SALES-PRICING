@@ -2,22 +2,24 @@
     <table class="table" id="sales-table">
         <thead>
             <tr>
-                <th>Product Brand</th>
-        <th>Product Model</th>
-        <th>Start Of Sale</th>
-        <th>End Of Sale</th>
-        <th>Sale Code</th>
+                <th>Sold Product Brand</th>
+        <th>Sold Product Model</th>
+        <th>Date Sold</th>
+        <th>Customer Name</th>
+        <th>Contact Number</th>
+        <th>Product Warranty Code</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
         <tbody>
         @foreach($sales as $sales)
             <tr>
-                <td>{{ $sales->Product_Brand }}</td>
-            <td>{{ $sales->Product_Model }}</td>
-            <td>{{ $sales->Start_Of_Sale }}</td>
-            <td>{{ $sales->End_Of_Sale }}</td>
-            <td>{{ $sales->Sale_Code }}</td>
+                <td>{{ $sales->Sold_Product_Brand }}</td>
+            <td>{{ $sales->Sold_Product_Model }}</td>
+            <td>{{ $sales->Date_Sold }}</td>
+            <td>{{ $sales->Customer_Name }}</td>
+            <td>{{ $sales->Contact_Number }}</td>
+            <td>{{ $sales->Product_Warranty_Code }}</td>
                 <td width="120">
                     {!! Form::open(['route' => ['sales.destroy', $sales->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

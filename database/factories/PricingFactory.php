@@ -24,8 +24,9 @@ class PricingFactory extends Factory
         return [
             'Product_Model' => $this->faker->word,
         'Product_Price' => $this->faker->word,
-        'Customer_Name' => $this->faker->word,
-        'Date_Bought' => $this->faker->word,
+        'Product_Discount' => $this->faker->word,
+        'Start_Of_Sale' => $this->faker->word,
+        'End_Of_Sale' => $this->faker->word,
         'Warranty_Code' => $this->faker->word,
         'created_at' => $this->faker->date('Y-m-d H:i:s'),
         'updated_at' => $this->faker->date('Y-m-d H:i:s')

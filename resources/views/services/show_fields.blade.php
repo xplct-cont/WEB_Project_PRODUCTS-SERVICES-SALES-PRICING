@@ -10,6 +10,12 @@
     <p>{{ $services->Product_Issue }}</p>
 </div>
 
+<!-- Service Warranty Code Field -->
+<div class="col-sm-12">
+    {!! Form::label('Service_Warranty_Code', 'Service Warranty Code:') !!}
+    <p>{{ $services->Service_Warranty_Code }}</p>
+</div>
+
 <!-- Owner Field -->
 <div class="col-sm-12">
     {!! Form::label('Owner', 'Owner:') !!}

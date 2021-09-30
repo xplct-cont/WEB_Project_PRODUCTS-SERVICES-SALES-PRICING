@@ -4,6 +4,7 @@
             <tr>
                 <th>Product Model</th>
         <th>Product Issue</th>
+        <th>Service Warranty Code</th>
         <th>Owner</th>
         <th>Email</th>
         <th>Contact Number</th>
@@ -16,6 +17,7 @@
             <tr>
                 <td>{{ $services->Product_Model }}</td>
             <td>{{ $services->Product_Issue }}</td>
+            <td>{{ $services->Service_Warranty_Code }}</td>
             <td>{{ $services->Owner }}</td>
             <td>{{ $services->Email }}</td>
             <td>{{ $services->Contact_Number }}</td>

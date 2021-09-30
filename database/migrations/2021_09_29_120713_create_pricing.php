@@ -17,8 +17,9 @@ class CreatePricing extends Migration
             $table->id();
             $table->string('Product_Model')->nullable();
             $table->decimal('Product_Price', 10,2)->unsigned();
-            $table->string('Customer_Name');
-            $table->date('Date_Bought');
+            $table->string('Product_Discount')->nullable();
+            $table->date('Start_Of_Sale');
+            $table->date('End_Of_Sale');
             $table->string('Warranty_Code');
 
             $table->timestamps();

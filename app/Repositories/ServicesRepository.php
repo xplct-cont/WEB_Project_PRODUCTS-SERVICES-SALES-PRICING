@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class ServicesRepository
  * @package App\Repositories
- * @version September 29, 2021, 1:47 am UTC
+ * @version September 30, 2021, 12:17 am UTC
 */
 
 class ServicesRepository extends BaseRepository
@@ -19,6 +19,7 @@ class ServicesRepository extends BaseRepository
     protected $fieldSearchable = [
         'Product_Model',
         'Product_Issue',
+        'Service_Warranty_Code',
         'Owner',
         'Email',
         'Contact_Number',

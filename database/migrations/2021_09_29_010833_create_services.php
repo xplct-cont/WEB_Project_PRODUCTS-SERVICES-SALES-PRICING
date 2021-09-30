@@ -17,6 +17,7 @@ class CreateServices extends Migration
             $table->id();
             $table->string('Product_Model')->nullable();
             $table->string('Product_Issue', 500)->nullable();
+            $table->string('Service_Warranty_Code')->nullable();
             $table->string('Owner')->nullable();
             $table->string('Email')->nullable();
             $table->string('Contact_Number')->nullable();

@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class PricingRepository
  * @package App\Repositories
- * @version September 29, 2021, 12:16 pm UTC
+ * @version September 30, 2021, 12:19 am UTC
 */
 
 class PricingRepository extends BaseRepository
@@ -19,8 +19,9 @@ class PricingRepository extends BaseRepository
     protected $fieldSearchable = [
         'Product_Model',
         'Product_Price',
-        'Customer_Name',
-        'Date_Bought',
+        'Product_Discount',
+        'Start_Of_Sale',
+        'End_Of_Sale',
         'Warranty_Code'
     ];
 

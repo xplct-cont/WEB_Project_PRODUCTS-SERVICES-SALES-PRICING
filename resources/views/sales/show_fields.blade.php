@@ -1,30 +1,36 @@
-<!-- Product Brand Field -->
+<!-- Sold Product Brand Field -->
 <div class="col-sm-12">
-    {!! Form::label('Product_Brand', 'Product Brand:') !!}
-    <p>{{ $sales->Product_Brand }}</p>
+    {!! Form::label('Sold_Product_Brand', 'Sold Product Brand:') !!}
+    <p>{{ $sales->Sold_Product_Brand }}</p>
 </div>
 
-<!-- Product Model Field -->
+<!-- Sold Product Model Field -->
 <div class="col-sm-12">
-    {!! Form::label('Product_Model', 'Product Model:') !!}
-    <p>{{ $sales->Product_Model }}</p>
+    {!! Form::label('Sold_Product_Model', 'Sold Product Model:') !!}
+    <p>{{ $sales->Sold_Product_Model }}</p>
 </div>
 
-<!-- Start Of Sale Field -->
+<!-- Date Sold Field -->
 <div class="col-sm-12">
-    {!! Form::label('Start_Of_Sale', 'Start Of Sale:') !!}
-    <p>{{ $sales->Start_Of_Sale }}</p>
+    {!! Form::label('Date_Sold', 'Date Sold:') !!}
+    <p>{{ $sales->Date_Sold }}</p>
 </div>
 
-<!-- End Of Sale Field -->
+<!-- Customer Name Field -->
 <div class="col-sm-12">
-    {!! Form::label('End_Of_Sale', 'End Of Sale:') !!}
-    <p>{{ $sales->End_Of_Sale }}</p>
+    {!! Form::label('Customer_Name', 'Customer Name:') !!}
+    <p>{{ $sales->Customer_Name }}</p>
 </div>
 
-<!-- Sale Code Field -->
+<!-- Contact Number Field -->
 <div class="col-sm-12">
-    {!! Form::label('Sale_Code', 'Sale Code:') !!}
-    <p>{{ $sales->Sale_Code }}</p>
+    {!! Form::label('Contact_Number', 'Contact Number:') !!}
+    <p>{{ $sales->Contact_Number }}</p>
+</div>
+
+<!-- Product Warranty Code Field -->
+<div class="col-sm-12">
+    {!! Form::label('Product_Warranty_Code', 'Product Warranty Code:') !!}
+    <p>{{ $sales->Product_Warranty_Code }}</p>
 </div>
 

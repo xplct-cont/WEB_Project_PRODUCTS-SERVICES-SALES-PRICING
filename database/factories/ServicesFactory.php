@@ -24,6 +24,7 @@ class ServicesFactory extends Factory
         return [
             'Product_Model' => $this->faker->word,
         'Product_Issue' => $this->faker->word,
+        'Service_Warranty_Code' => $this->faker->word,
         'Owner' => $this->faker->word,
         'Email' => $this->faker->word,
         'Contact_Number' => $this->faker->word,

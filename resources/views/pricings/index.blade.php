@@ -1,6 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+<body>
+ <div class="b">
+
+<img src="{{url('images/rythm.png')}}" width="1600" height="750" alt=""/>
+
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">

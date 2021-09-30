@@ -10,21 +10,37 @@
     {!! Form::number('Product_Price', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Customer Name Field -->
+<!-- Product Discount Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Customer_Name', 'Customer Name:') !!}
-    {!! Form::text('Customer_Name', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
+    {!! Form::label('Product_Discount', 'Product Discount:') !!}
+    {!! Form::text('Product_Discount', null, ['class' => 'form-control','maxlength' => 255,'maxlength' => 255]) !!}
 </div>
 
-<!-- Date Bought Field -->
+<!-- Start Of Sale Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Date_Bought', 'Date Bought:') !!}
-    {!! Form::text('Date_Bought', null, ['class' => 'form-control','id'=>'Date_Bought']) !!}
+    {!! Form::label('Start_Of_Sale', 'Start Of Sale:') !!}
+    {!! Form::text('Start_Of_Sale', null, ['class' => 'form-control','id'=>'Start_Of_Sale']) !!}
 </div>
 
 @push('page_scripts')
     <script type="text/javascript">
-        $('#Date_Bought').datetimepicker({
+        $('#Start_Of_Sale').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm:ss',
+            useCurrent: true,
+            sideBySide: true
+        })
+    </script>
+@endpush
+
+<!-- End Of Sale Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('End_Of_Sale', 'End Of Sale:') !!}
+    {!! Form::text('End_Of_Sale', null, ['class' => 'form-control','id'=>'End_Of_Sale']) !!}
+</div>
+
+@push('page_scripts')
+    <script type="text/javascript">
+        $('#End_Of_Sale').datetimepicker({
             format: 'YYYY-MM-DD HH:mm:ss',
             useCurrent: true,
             sideBySide: true

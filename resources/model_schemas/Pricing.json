@@ -36,10 +36,10 @@
         "inView": true
     },
     {
-        "name": "Customer_Name",
-        "dbType": "string,255",
+        "name": "Product_Discount",
+        "dbType": "string,255:nullable",
         "htmlType": "text",
-        "validations": "required|string|max:255|string|max:255",
+        "validations": "nullable|string|max:255|nullable|string|max:255",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -48,7 +48,19 @@
         "inView": true
     },
     {
-        "name": "Date_Bought",
+        "name": "Start_Of_Sale",
+        "dbType": "date",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "End_Of_Sale",
         "dbType": "date",
         "htmlType": "date",
         "validations": "required",

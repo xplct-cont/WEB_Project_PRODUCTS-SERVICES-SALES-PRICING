@@ -5,7 +5,7 @@
  <body>
  <div class="b">
 
-<img src="{{url('images/rythm.png')}}" width="1600" height="750" alt=""/>
+<img src="{{url('images/saless.png')}}" width="1600" height="750" alt=""/>
 
 </div>
 

@@ -15,11 +15,12 @@ class CreateSales extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
-            $table->string('Product_Brand');
-            $table->string('Product_Model');
-            $table->date('Start_Of_Sale');
-            $table->date('End_Of_Sale');
-            $table->string('Sale_Code');
+            $table->string('Sold_Product_Brand')->nullable();
+            $table->string('Sold_Product_Model')->nullable();
+            $table->date('Date_Sold');
+            $table->string('Customer_Name')->nullable();
+            $table->string('Contact_Number')->nullable();
+            $table->string('Product_Warranty_Code');
             $table->timestamps();
         });
     }

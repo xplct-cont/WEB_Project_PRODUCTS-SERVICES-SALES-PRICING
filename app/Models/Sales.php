@@ -9,13 +9,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Sales
  * @package App\Models
- * @version September 29, 2021, 12:27 pm UTC
+ * @version September 30, 2021, 12:20 am UTC
  *
- * @property string $Product_Brand
- * @property string $Product_Model
- * @property string $Start_Of_Sale
- * @property string $End_Of_Sale
- * @property string $Sale_Code
+ * @property string $Sold_Product_Brand
+ * @property string $Sold_Product_Model
+ * @property string $Date_Sold
+ * @property string $Customer_Name
+ * @property string $Contact_Number
+ * @property string $Product_Warranty_Code
  */
 class Sales extends Model
 {
@@ -34,11 +35,12 @@ class Sales extends Model
 
 
     public $fillable = [
-        'Product_Brand',
-        'Product_Model',
-        'Start_Of_Sale',
-        'End_Of_Sale',
-        'Sale_Code'
+        'Sold_Product_Brand',
+        'Sold_Product_Model',
+        'Date_Sold',
+        'Customer_Name',
+        'Contact_Number',
+        'Product_Warranty_Code'
     ];
 
     /**
@@ -48,11 +50,12 @@ class Sales extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'Product_Brand' => 'string',
-        'Product_Model' => 'string',
-        'Start_Of_Sale' => 'date',
-        'End_Of_Sale' => 'date',
-        'Sale_Code' => 'string'
+        'Sold_Product_Brand' => 'string',
+        'Sold_Product_Model' => 'string',
+        'Date_Sold' => 'date',
+        'Customer_Name' => 'string',
+        'Contact_Number' => 'string',
+        'Product_Warranty_Code' => 'string'
     ];
 
     /**
@@ -61,11 +64,12 @@ class Sales extends Model
      * @var array
      */
     public static $rules = [
-        'Product_Brand' => 'required|string|max:255',
-        'Product_Model' => 'required|string|max:255',
-        'Start_Of_Sale' => 'required',
-        'End_Of_Sale' => 'required',
-        'Sale_Code' => 'required|string|max:255',
+        'Sold_Product_Brand' => 'nullable|string|max:255',
+        'Sold_Product_Model' => 'nullable|string|max:255',
+        'Date_Sold' => 'required',
+        'Customer_Name' => 'nullable|string|max:255',
+        'Contact_Number' => 'nullable|string|max:255',
+        'Product_Warranty_Code' => 'required|string|max:255',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
     ];

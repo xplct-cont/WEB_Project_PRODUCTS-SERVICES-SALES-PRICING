@@ -9,10 +9,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Services
  * @package App\Models
- * @version September 29, 2021, 1:47 am UTC
+ * @version September 30, 2021, 12:17 am UTC
  *
  * @property string $Product_Model
  * @property string $Product_Issue
+ * @property string $Service_Warranty_Code
  * @property string $Owner
  * @property string $Email
  * @property string $Contact_Number
@@ -37,6 +38,7 @@ class Services extends Model
     public $fillable = [
         'Product_Model',
         'Product_Issue',
+        'Service_Warranty_Code',
         'Owner',
         'Email',
         'Contact_Number',
@@ -52,6 +54,7 @@ class Services extends Model
         'id' => 'integer',
         'Product_Model' => 'string',
         'Product_Issue' => 'string',
+        'Service_Warranty_Code' => 'string',
         'Owner' => 'string',
         'Email' => 'string',
         'Contact_Number' => 'string',
@@ -66,6 +69,7 @@ class Services extends Model
     public static $rules = [
         'Product_Model' => 'nullable|string|max:255',
         'Product_Issue' => 'nullable|string|max:500',
+        'Service_Warranty_Code' => 'nullable|string|max:255',
         'Owner' => 'nullable|string|max:255',
         'Email' => 'nullable|string|max:255',
         'Contact_Number' => 'nullable|string|max:255',
